@@ -5,10 +5,7 @@ ___
 ![linux-4259595_960_720](https://user-images.githubusercontent.com/49502261/60325160-9e152800-9954-11e9-9749-823cdcb86813.jpg)
 
 # Description
-My collection of completed code war katas for your perusal. All code wars were completed on codewars.io. 
-
-## What I Learned
-I do about five code wars every week. They help improve my skills. 
+My collection of completed code war katas for your perusal. All code wars were completed on codewars.io. Includes code wars done in javascript and python.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
