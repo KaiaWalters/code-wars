@@ -9,3 +9,5 @@ function howMuchILoveYou(nbPetals) {
       console.log(petals[equation])
     }
   }
+//need to convert this to c# 
+  howMuchILoveYou(7) 
