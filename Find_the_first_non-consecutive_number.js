@@ -5,4 +5,6 @@
     }
   }
   return null
-}
+};
+
+//Can this be done recursively? 
