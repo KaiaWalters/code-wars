@@ -8,6 +8,4 @@ ___
 My collection of completed code war katas for your perusal. All code wars were completed on codewars.io. Includes code wars done in javascript and python.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate. Thank you.
+Pull requests are welcome.
