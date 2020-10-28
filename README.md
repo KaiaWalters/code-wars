@@ -1,4 +1,4 @@
-# codeWars
+# Code Wars 
 
 [Link to the Project: CodeWars Profile](https://www.codewars.com/users/KaiaCodes0)
 ___
