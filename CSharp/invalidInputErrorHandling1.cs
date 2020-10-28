@@ -54,7 +54,7 @@ public class Kata
   {
      int vowels = 0;
      int consonants = 0;
-      if(word.GetType() != typeof(string)){
+      if(word.GetType() == typeof(string)){
         for (int counter = 0; counter < word.Length; counter++) {
             var c = word[counter].ToString( );
             bool isVowel = "aeiouAEIOU".IndexOf(c) >= 0;
