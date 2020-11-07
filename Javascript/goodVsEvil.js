@@ -37,60 +37,47 @@
 
 function goodVsEvil(good, evil){
     let final = []
-  
     let count = -1
-  
     const reducer = (accumulator, currentValue) => accumulator + currentValue
-  
     let goodWorth = [1,2,3,3,4,10]
-  
     let splitString = good.split(" ")
   
-  splitString.forEach(x =>{
-             count += 1;         
-             final.push(parseInt(x) * goodWorth[count])
-  })
+    splitString.forEach(x =>{
+                count += 1;         
+                final.push(parseInt(x) * goodWorth[count])
+    })
   
-  final = final.reduce(reducer)
+    final = final.reduce(reducer)
   
-  
-  
-  let final2 = []
-  
-  let count2 = -1
-  
-  const reducer2 = (accumulator, currentValue) => accumulator + currentValue;
-  
-  let evilWorth = [1,2,2,2,3,5,10]
-  
-  let splitString2 = evil.split(" ")
-  
-  splitString2.forEach(x =>{
-             count2 += 1;         
-             final2.push(parseInt(x) * evilWorth[count2])
-  })
+    
+    let final2 = []
+    let count2 = -1
+    const reducer2 = (accumulator, currentValue) => accumulator + currentValue;
+    let evilWorth = [1,2,2,2,3,5,10]
+    let splitString2 = evil.split(" ")
+    
+    splitString2.forEach(x =>{
+                count2 += 1;         
+                final2.push(parseInt(x) * evilWorth[count2])
+    })
   
     final2 = final2.reduce(reducer)
-    
     return getWinner(final, final2)
   }
     
-    
-    
-    
-     function getWinner(goodWorth, evilWorth){ 
-       console.log(goodWorth, evilWorth)
-          if(goodWorth == evilWorth) 
-          { 
-             return "Battle Result: No victor on this battle field"      
-          } 
-          else if(goodWorth > evilWorth)
-          { 
-             return "Battle Result: Good triumphs over Evil"
-          } 
-          else if(goodWorth < evilWorth)
-          {
-            return "Battle Result: Evil eradicates all trace of Good"
-          }
-      } 
+function getWinner(goodWorth, evilWorth){ 
+    console.log(goodWorth, evilWorth)
+    if(goodWorth == evilWorth) 
+    { 
+        return "Battle Result: No victor on this battle field"      
+    } 
+    else if(goodWorth > evilWorth)
+    { 
+        return "Battle Result: Good triumphs over Evil"
+    } 
+    else if(goodWorth < evilWorth)
+    {
+    return "Battle Result: Evil eradicates all trace of Good"
+    }
+} 
   
