@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/leetcodes/intersection_of_arrayII.js"
+            "program": "${workspaceFolder}/leetcodes/valid_sudoku.js"
         }
     ]
 }
