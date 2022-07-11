@@ -15,19 +15,20 @@ var isValidSudoku = function(board) {
         //start from the beginning moving onto the next element at index 1 and so on...
         //stop when all boxes in a column have been validated
 
-        while(count != 81) {
+        while(index < 9) {
             let column = [] 
-            for(let i=0; i <= 9; i++) {
+            for(let i=0; i < 9; i++) {
                 if(board[i][index] != ".") {
-                        column.push(board[i][index])
+                    column.push(board[i][index])
                 }
-                index+=1
             }
+            index+=1
             columns.push(column)
         }
-        count+=9
 
-        return(rowIsValid(rows) && rowIsValid(column))
+        if(rowIsValid(board) || rowIsValid(columns)) {
+            return false
+        }
     };
 
     var rowIsValid = function(board) {
@@ -38,8 +39,8 @@ var isValidSudoku = function(board) {
                     return false
                 }
             })
-            return true
         })
+        return true
     };
 
     let board = [["8","3",".",".","7",".",".",".","."]
