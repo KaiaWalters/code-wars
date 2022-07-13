@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/leetcodes/valid_sudoku.js"
+            "program": "${workspaceFolder}/leetcodes/search_insert_position.js"
         }
     ]
 }

@@ -7,7 +7,6 @@ var isValidSudoku = function(board) {
     //     check if that row contains any duplicates
         let columns = []
         let index = 0 
-        let count = 0
         //for each row on board 
         // stop at the first element at index 0 
         //push that index into a seperate array
@@ -26,7 +25,9 @@ var isValidSudoku = function(board) {
             columns.push(column)
         }
 
-        if(rowIsValid(board) || rowIsValid(columns)) {
+        if(rowIsValid(board) == true && rowIsValid(columns) == true) {
+            return true
+        } else {
             return false
         }
     };
