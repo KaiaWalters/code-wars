@@ -36,8 +36,6 @@ var searchInsert = function(nums, target) {
             return idx
         }
     }
-
-    
 }
 
 searchInsert([1,3,4,5,6], 3)
