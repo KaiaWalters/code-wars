@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/leetcodes/valid_anigram.js"
+            "program": "${workspaceFolder}/leetcodes/valid_palindrome.js"
         }
     ]
 }
