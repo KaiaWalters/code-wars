@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/leetcodes/longest_common_prefix.js"
+            "program": "${workspaceFolder}/leetcodes/rob_houses.js"
         }
     ]
 }
