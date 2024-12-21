@@ -1,0 +1,54 @@
+function intervals(interval) {
+    let data = sortArray(interval) 
+    findSum(data)
+}
+
+function findSum(data) {
+    let accumulator = 0
+    data.forEach((current, index) => {
+
+        let prev = data[index - 1]
+
+        if(prev){
+            accumulator += current - prev
+        }else {
+            return 
+        }
+    })
+}
+
+function sortArray(interval) {
+    let array = []
+
+    interval.forEach( x => {
+        array.push(x[0])
+        array.push(x[1])
+    })
+
+    return array.sort()
+}
+
+
+let interval =  [
+    [1, 5],
+   [10, 20],
+   [1, 6],
+   [16, 19],
+   [5, 11]
+ ]
+
+
+intervals(interval)
+
+
+
+//sort the the array so that each element is sorted in ascending order 
+// find the distance between prev[1] => current[0] => current[1] and so on 
+// add push the difference into an2  array 
+// reduce 
+
+// I got stuck on the sorting step
+
+
+//found solution: 
+
