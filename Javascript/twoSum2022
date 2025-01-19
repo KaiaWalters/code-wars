@@ -1,0 +1,20 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) { 
+    let firstNumber, secondNumber
+        
+   nums.forEach( num => {
+        for(let i=0; i<= nums.length ; i++) {
+            if(num + nums[i] == target && nums.indexOf(num) !== i){
+                firstNumber = nums.indexOf(num)
+                secondNumber = i 
+            }
+        }
+    })                                                                                                      
+      return  [firstNumber,secondNumber] 
+    
+    
+};
